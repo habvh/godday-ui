@@ -6,5 +6,5 @@ type ContentProps = {
 };
 
 export function Content({ className, ...props }: ContentProps) {
-  return <div className={`${className} mx-auto px-[4vw]`} {...props} />;
+  return <div className={`${className ?? ""} mx-auto px-[4vw]`} {...props} />;
 }

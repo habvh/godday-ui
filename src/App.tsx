@@ -1,5 +1,5 @@
-import { Header } from "./components/Header";
-import { Search } from "./components/Search";
+import Header from "./components/Header";
+import Search from "./components/Search";
 import Services from "./components/Services";
 
 function App() {

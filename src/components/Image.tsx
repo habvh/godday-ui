@@ -15,7 +15,7 @@ export function Image({
 }: ImageProps) {
   return (
     <div
-      className={`bg-cover rounded-3xl p-10 ${className}`}
+      className={`bg-cover rounded-lg md:rounded-3xl ${className}`}
       style={{
         backgroundImage: `url(${imageUrl})`,
       }}
