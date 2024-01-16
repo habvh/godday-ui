@@ -60,7 +60,9 @@ export default function Header() {
               <IoPersonOutline className="w-5 h-5" />
             </div>
             <div className="md:block hidden">
-              <Button icon={<IoIosArrowDown />}>Sign In</Button>
+              <Button isDefaultStyle={false} icon={<IoIosArrowDown />}>
+                Sign In
+              </Button>
             </div>
           </div>
           <div className="cart">

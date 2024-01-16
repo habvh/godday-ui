@@ -18,6 +18,9 @@ export function Image({
       className={`bg-cover rounded-lg md:rounded-3xl ${className}`}
       style={{
         backgroundImage: `url(${imageUrl})`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundOrigin: "border-box",
       }}
       {...props}
     />
