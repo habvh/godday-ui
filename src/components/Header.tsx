@@ -52,7 +52,7 @@ export default function Header() {
               <IoHelpCircleOutline className="w-5 h-5" />
             </div>
             <div className="md:block hidden">
-              <Button>Help Center</Button>
+              <Button isDefaultStyle={false}>Help Center</Button>
             </div>
           </div>
           <div>
