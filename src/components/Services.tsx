@@ -21,6 +21,66 @@ function ServiceItem({
   );
 }
 
+function ServiceBanner() {
+  return (
+    <section className="grid grid-rows-1 xl:grid-cols-auto30 gap-4 ">
+      <Image
+        className="min-h-[64vw] lg:min-h-[40vw] xl:min-h-[31vw]"
+        imageAlt="background"
+        imageUrl="https://img1.wsimg.com/cdnassets/transform/9fe7d867-9c96-44f4-9c62-48e594446440/row-mrq-hp-landscape"
+        imageSrcSets={[`${bgPortrait}`, `${bgTable} 2x`, `${bgWeb} 3x`]}
+      >
+        <article className="font-medium grid grid-cols-1 lg:grid-cols-2 xl:items-center h-full p-8 xl:p-10">
+          <div className="flex flex-col gap-2 items-center text-center lg:text-start lg:items-start xl:gap-4">
+            <div className="flex flex-col gap-2 md:gap-6 xl:gap-8">
+              <p>Websites + Marketing</p>
+              <p className="text-xl md:text-3xl font-serif font-bold">
+                Tools for all your business firsts.
+              </p>
+              <p>Website and store solutions for any small business</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <Button>Get Started</Button>
+              <div className="hidden lg:block">
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+            <p className="font-normal text-sm">
+              No credit card required<sup>**</sup>
+            </p>
+          </div>
+        </article>
+      </Image>
+      <Image className="bg-go-jade-light">
+        <article className="font-medium items-center h-full p-4 md:px-8 xl:p-10">
+          <div className="flex flex-col xl:gap-4">
+            <div className="flex flex-col gap-1 md:gap-3 xl:gap-8">
+              <p>Domain Names</p>
+              <p className="text-xl md:text-3xl font-medium">
+                Grab a .com for just $0.01<sup>*</sup>/1st yr
+              </p>
+              <p>
+                2-year purchase required<sup>*</sup>
+              </p>
+            </div>
+            <div className="hidden md:block">
+              <div className="my-2">
+                <Button>Find Your Domain</Button>
+              </div>
+              <p>
+                <a href="#">Transfer Your Domains</a>
+              </p>
+              <p className="font-normal text-sm">
+                Domain include free primacy profection forever<sup>*</sup>
+              </p>
+            </div>
+          </div>
+        </article>
+      </Image>
+    </section>
+  );
+}
+
 function ServicesTable() {
   return (
     <section className="my-4">
@@ -128,61 +188,7 @@ export default function Services() {
   return (
     <section>
       <Content>
-        <section className="grid grid-rows-1 xl:grid-cols-auto30 gap-4 ">
-          <Image
-            className="min-h-[64vw] lg:min-h-[40vw] xl:min-h-[31vw]"
-            imageAlt="background"
-            imageUrl="https://img1.wsimg.com/cdnassets/transform/9fe7d867-9c96-44f4-9c62-48e594446440/row-mrq-hp-landscape"
-            imageSrcSets={[`${bgPortrait}`, `${bgTable} 2x`, `${bgWeb} 3x`]}
-          >
-            <article className="font-medium grid grid-cols-1 lg:grid-cols-2 xl:items-center h-full p-8 xl:p-10">
-              <div className="flex flex-col gap-2 items-center text-center lg:text-start lg:items-start xl:gap-4">
-                <div className="flex flex-col gap-2 md:gap-6 xl:gap-8">
-                  <p>Websites + Marketing</p>
-                  <p className="text-xl md:text-3xl font-serif font-bold">
-                    Tools for all your business firsts.
-                  </p>
-                  <p>Website and store solutions for any small business</p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Button>Get Started</Button>
-                  <div className="hidden lg:block">
-                    <a href="#">Learn More</a>
-                  </div>
-                </div>
-                <p className="font-normal text-sm">
-                  No credit card required<sup>**</sup>
-                </p>
-              </div>
-            </article>
-          </Image>
-          <Image className="bg-go-jade-light">
-            <article className="font-medium items-center h-full p-4 md:px-8 xl:p-10">
-              <div className="flex flex-col xl:gap-4">
-                <div className="flex flex-col gap-1 md:gap-3 xl:gap-8">
-                  <p>Domain Names</p>
-                  <p className="text-xl md:text-3xl font-medium">
-                    Grab a .com for just $0.01<sup>*</sup>/1st yr
-                  </p>
-                  <p>
-                    2-year purchase required<sup>*</sup>
-                  </p>
-                </div>
-                <div className="hidden md:block">
-                  <div className="my-2">
-                    <Button>Find Your Domain</Button>
-                  </div>
-                  <p>
-                    <a href="#">Transfer Your Domains</a>
-                  </p>
-                  <p className="font-normal text-sm">
-                    Domain include free primacy profection forever<sup>*</sup>
-                  </p>
-                </div>
-              </div>
-            </article>
-          </Image>
-        </section>
+        <ServiceBanner />
         <ServicesTable />
         <ServicesSteps />
       </Content>
