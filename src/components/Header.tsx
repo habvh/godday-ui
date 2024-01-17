@@ -66,7 +66,7 @@ export default function Header() {
             </div>
           </div>
           <div className="cart">
-            <IoCartOutline className="w-5 h-5" />
+            <IoCartOutline className="w-5 h-5 cursor-pointer" />
           </div>
         </div>
       </Content>

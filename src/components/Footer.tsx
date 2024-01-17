@@ -8,9 +8,14 @@ import { Content } from "./Content";
 import Input from "./Input";
 import { GoDaddyIcon } from "./icons/Godaddy";
 import { Button } from "./Button";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
 
-const descriptions = [
+type Description = {
+  title: string;
+  data: string[];
+};
+
+const descriptions: Description[] = [
   {
     title: "About GoDaddy",
     data: [
@@ -141,10 +146,10 @@ export default function Footer() {
             </Button>
           </div>
           <div className="flex gap-2 lg:gap-4">
-            <IoLogoFacebook className="w-4 h-4 lg:w-8 lg:h-8" />
-            <IoLogoInstagram className="w-4 h-4 lg:w-8 lg:h-8" />
-            <IoLogoTwitter className="w-4 h-4 lg:w-8 lg:h-8" />
-            <IoLogoYoutube className="w-4 h-4 lg:w-8 lg:h-8" />
+            <IoLogoFacebook className="w-4 h-4 lg:w-8 lg:h-8 cursor-pointer" />
+            <IoLogoInstagram className="w-4 h-4 lg:w-8 lg:h-8 cursor-pointer" />
+            <IoLogoTwitter className="w-4 h-4 lg:w-8 lg:h-8 cursor-pointer" />
+            <IoLogoYoutube className="w-4 h-4 lg:w-8 lg:h-8 cursor-pointer" />
           </div>
         </div>
       </Content>
@@ -158,9 +163,15 @@ export default function Footer() {
             United States.
           </p>
           <div className="flex gap-6 text-gray-400 flex-1 justify-center lg:justify-end">
-            <span>Legal</span>
-            <span>Privacy Policy</span>
-            <span>Cookies</span>
+            <a href="#">
+              <span>Legal</span>
+            </a>
+            <a href="#">
+              <span>Privacy Policy</span>
+            </a>
+            <a href="#">
+              <span>Cookies</span>
+            </a>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-2">
@@ -169,9 +180,12 @@ export default function Footer() {
             this site, you acknowledge your agreement to be bound by these
             <span className="text-go-jade"> General Terms of Service</span>.
           </p>
-          <p className="flex text-gray-400 flex-1 justify-center lg:justify-end">
-            Do not sell my personal information
-          </p>
+          <a
+            href="#"
+            className="flex text-gray-400 flex-1 justify-center lg:justify-end"
+          >
+            <span>Do not sell my personal information</span>
+          </a>
         </div>
       </Content>
     </footer>
