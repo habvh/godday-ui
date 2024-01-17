@@ -20,7 +20,7 @@ export default function Header() {
               <IoMenuOutline className="w-10 h-10" />
             </div>
             <a href="https://www.godaddy.com/vi-vn" target="_blank">
-              <GoDaddyIcon classCustom="w-32 mobile" />
+              <GoDaddyIcon className="w-32 mobile" />
             </a>
           </div>
           <nav>

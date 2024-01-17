@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Search from "./components/Search";
 import Services from "./components/Services";
 import TemplateSell from "./components/SlideProject";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Search />
       <Services />
       <TemplateSell />
+      <Footer />
       <SpeedInsights />
     </>
   );

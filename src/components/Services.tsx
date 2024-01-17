@@ -83,7 +83,7 @@ function ServiceBanner() {
 
 function ServicesTable() {
   return (
-    <section className="my-4">
+    <section className="my-4 font-medium">
       <ul className="grid grid-cols-2 grid-flow-row-dense xl:grid-cols-5 xl:grid-rows-2 border border-go-gray rounded-lg">
         <li className="border border-go-gray">
           <ServiceItem href="#">Domains</ServiceItem>

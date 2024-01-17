@@ -35,7 +35,7 @@ export function Button({
     <button
       className={`${
         isDefaultStyle
-          ? "py-2 md:py-4 px-8 md:px-14 bg-go-black text-go-white rounded-lg"
+          ? "py-3 md:py-4 px-8 md:px-14 bg-go-black text-go-white rounded-lg"
           : ""
       } flex items-center justify-center gap-2`}
       {...props}

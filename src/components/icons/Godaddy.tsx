@@ -1,12 +1,12 @@
 type GoDaddyIconProps = {
-  classCustom?: string;
+  className?: string;
 };
 
-export function GoDaddyIcon({ classCustom }: GoDaddyIconProps) {
+export function GoDaddyIcon({ className }: GoDaddyIconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`${classCustom} logo-mark`}
+      className={`${className} logo-mark`}
       viewBox="0 0 166 32"
     >
       <path
