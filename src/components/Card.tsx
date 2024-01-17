@@ -39,16 +39,16 @@ export default function Card({
         <p className="font-bold text-2xl mb-2">{cardTitle}</p>
         <div className="my-4">{children}</div>
         {cardButtonText ? (
-          <div className="flex flex-col lg:items-center gap-4 lg:flex-row">
+          <div className="flex flex-col md:items-center gap-4 md:flex-row">
             <Button>{cardButtonText}</Button>
-            <div className="hidden sm:block">
+            <div className="hidden md:block">
               <a href="" target="_blank">
                 Learn more
               </a>
             </div>
           </div>
         ) : (
-          <div>
+          <div className="flex flex-col md:flex-row">
             <Button>Learn more</Button>
           </div>
         )}

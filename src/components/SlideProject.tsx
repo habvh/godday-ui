@@ -1,8 +1,9 @@
-import { useState, memo, useEffect, useRef } from "react";
+import { memo } from "react";
 import { Content } from "./Content";
 import { Image } from "./Image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { Button } from "./Button";
 
 const projects = [
   {
@@ -25,26 +26,44 @@ const projects = [
 const SlideProject = () => {
   return (
     <section>
-      <Content className="bg-go-gray py-10">
-        <div className="text-center mb-10">
-          <h3 className="text-3xl font-bold">Templates designed to sell</h3>
+      <Content className="bg-go-gray py-8 md:py-10 lg:py-20">
+        <div className="text-center mb-6 md:mb-14">
+          <h3 className="text-2xl xl:text-4xl font-medium mb-2">
+            Templates designed to sell
+          </h3>
           <p>Choose from 100s of designs for every idea and industry</p>
         </div>
         <Swiper
-          slidesPerView={2}
+          slidesPerView={"auto"}
           spaceBetween={30}
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}
+          breakpoints={{
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            1280: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+          }}
         >
           {projects.map((project, index) => (
             <SwiperSlide key={index}>
-              <Image imageUrl={project.url} className="h-[25vw]" />
+              <Image
+                imageUrl={project.url}
+                className="min-h-[40vw] xl:min-h-[25vw]"
+              />
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="flex justify-center mt-4 md:mt-10 flex-col md:flex-row">
+          <Button>Browser All Templetes</Button>
+        </div>
       </Content>
     </section>
   );

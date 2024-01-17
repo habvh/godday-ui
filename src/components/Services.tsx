@@ -23,7 +23,7 @@ function ServiceItem({
 
 function ServiceBanner() {
   return (
-    <section className="grid grid-rows-1 xl:grid-cols-auto30 gap-4 ">
+    <section className="grid grid-rows-1 xl:grid-cols-auto30 gap-4">
       <Image
         className="min-h-[64vw] lg:min-h-[40vw] xl:min-h-[31vw]"
         imageAlt="background"
@@ -131,8 +131,8 @@ function ServicesTable() {
 
 function ServicesSteps() {
   return (
-    <section className="grid lg:grid-cols-2 gap-8 sm:gap-20 md:px-20 md:py-5 xl:px-40 xl:py-10">
-      <div className="flex flex-col gap-8 sm:gap-20 lg:gap-0">
+    <section className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:px-20 pb-8 md:py-5 xl:px-40 xl:pt-10 xl:pb-20">
+      <div className="flex flex-col gap-8 sm:gap-10 lg:gap-0">
         <p className="font-serif font-bold text-2xl sm:text-4xl lg:text-5xl">
           Success in 3 easy steps
         </p>
@@ -154,7 +154,7 @@ function ServicesSteps() {
           </div>
         </Card>
       </div>
-      <div className="flex flex-col gap-8 sm:gap-20 lg:gap-0">
+      <div className="flex flex-col gap-8 sm:gap-10 lg:gap-0">
         <Card
           imageUrl="https://images.pexels.com/photos/6802049/pexels-photo-6802049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           imageAlt="image-for-step1"
