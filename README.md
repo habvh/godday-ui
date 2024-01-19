@@ -1,13 +1,13 @@
 # React + TypeScript + Vite
 
-#Homepage UI
+# Homepage UI
 ![Homepage image](./public/images/home.png)
 
-#Template Sell UI
+# Template Sell UI
 ![Template sell image](./public/images/slide.png)
 
-#Footer UI
-![Footer image](./public/images/footer_img.png)
+# Footer UI
+![Footer image](./public/images/footer.png)
 
-#All Page UI
+# All Page UI
 ![All page image](./public/images/all-page.png)
