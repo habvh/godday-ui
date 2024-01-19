@@ -7,14 +7,14 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <div className="overscroll-none">
       <Header />
       <Search />
       <Services />
       <TemplateSell />
       <Footer />
       <SpeedInsights />
-    </>
+    </div>
   );
 }
 

@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  /* outline: 1px solid red; */
+.invibile-scroll {
+  overflow-y: hidden;
+  width: 100%;
 }
 
 @layer utilities {
